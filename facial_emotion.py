@@ -86,11 +86,11 @@ class FacialEmotionDetector:
         if count:
             facial_emotion = max(dict, key=dict.get)  # 获得字典中value最大的key
 
-            jsonR = {
-                "facial_emotion": "%s" % facial_emotion,
-                "probability": "%s" % str(float(dict[facial_emotion]) / count)
-            }
+            # jsonR = {
+            #     "facial_emotion": "%s" % facial_emotion,
+            #     "probability": "%s" % str(float(dict[facial_emotion]) / count)
+            # }
 
-            return jsonR
+            return str(facial_emotion), float(dict[facial_emotion]) / count
         else:
             return 0

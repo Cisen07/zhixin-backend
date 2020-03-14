@@ -61,9 +61,9 @@ class AudioEmotionDetector:
         print("the file_path is ", audio_path)
         emo, prob = self.au_predict(model, graph, audio_path)
 
-        jsonR = {
-            "audio_emotion": "%s" % emo,
-            "probability": "%s" % max(prob)
-        }
+        # jsonR = {
+        #     "audio_emotion": "%s" % emo,
+        #     "probability": "%s" % max(prob)
+        # }
 
-        return jsonR
+        return emo, max(prob)

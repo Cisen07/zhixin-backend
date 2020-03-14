@@ -78,7 +78,8 @@ class CaptureFrames():
             self.pipe.send([orig])  # 去除非皮肤部分的信息后，传给心率提取进程
 
             if self.show_mask:
-                cv2.imshow('mask', orig)
+                pass
+                # cv2.imshow('mask', orig)  # 在窗口中显示出去掉非皮肤后的结果
             
             if self.frames_count % 30 == 29:
                 time_2 = time.time()

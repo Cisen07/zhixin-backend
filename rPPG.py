@@ -50,9 +50,9 @@ class HeartRate:
         hr_flag = self.get_heart_rate(file_path)
         if hr_flag:
             hr = self.cal_hr(self.heart_rate_file)
-            jsonR = {
-                "heart_rate": hr
-            }
-            return jsonR
+            # jsonR = {
+            #     "heart_rate": hr
+            # }
+            return hr
         else:
             return 0
