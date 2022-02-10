@@ -12,4 +12,4 @@ opencv_contrib_python==4.1.2.30
 Flask==1.1.1
 Pillow==7.0.0
 scikit_learn==0.22.2.post1
-tensorflow==1.15.0
+tensorflow==2.5.3
